@@ -10,13 +10,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Kenton Prescott",
   description: "Founder, product builder, trader/investor, and techno-optimist.",
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-icon.png',
-  },
-  other: {
-    "web3-support": "none"
-  }
+  icons: [
+    { rel: "icon", url: "/favicon.png", type: "image/png" },
+    { rel: "apple-touch-icon", url: "/apple-icon.png" }
+  ]
 };
 
 export default function RootLayout({
@@ -26,6 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body>{children}</body>
     </html>
   );
