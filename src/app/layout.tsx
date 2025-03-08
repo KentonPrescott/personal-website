@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Kenton Prescott",
   description: "Founder, product builder, trader/investor, and techno-optimist.",
+  icons: {
+    icon: '/favicon.ico',
+  },
   other: {
     "web3-support": "none"
   }
