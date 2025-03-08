@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "Founder, product builder, trader/investor, and techno-optimist.",
   icons: {
     icon: '/favicon.ico',
+    apple: '/apple-icon.png',
   },
   other: {
     "web3-support": "none"
