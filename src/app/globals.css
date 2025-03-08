@@ -11,13 +11,30 @@
   --link-hover-color: #4299E1;
 }
 
+/* Prevent overscroll behavior */
+html, body {
+  overscroll-behavior: none;
+  background-color: rgb(var(--background-end-rgb)); /* Solid background color to match the end of gradient */
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb))) no-repeat;
+  background-attachment: fixed; /* Keep the gradient fixed when scrolling */
+  overflow-x: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16.5px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 a {

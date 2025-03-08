@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full flex justify-center items-start py-20">
-      <div className="w-[575px] px-4">
+    <main className="min-h-screen w-full flex justify-center items-start py-20 overflow-x-hidden overflow-y-auto">
+      <div className="w-[575px] px-4 max-w-full pb-20">
         <h1>Kenton Prescott</h1>
       
         <ul className="space-y-4">
