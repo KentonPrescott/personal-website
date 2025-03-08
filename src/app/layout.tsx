@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Kenton Prescott",
   description: "Founder, product builder, trader/investor, and techno-optimist.",
   icons: [
-    { rel: "icon", url: "/favicon.png", type: "image/png" },
+    { rel: "icon", url: "/favicon.ico" },
     { rel: "apple-touch-icon", url: "/apple-icon.png" }
   ]
 };
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>{children}</body>
     </html>
